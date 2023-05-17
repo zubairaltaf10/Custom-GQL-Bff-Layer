@@ -1,6 +1,6 @@
 # bff-layer-starter
 
-Custom GraphQL BFF Layer starter kit to support your frontend.
+Custom GraphQL BFF Layer starter kit to support your frontend with everything you need.
 
 ## Setup
 
