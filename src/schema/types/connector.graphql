@@ -1,0 +1,45 @@
+enum ConnectorType {
+  # Commercial connector
+  COMMERCIAL
+  # ServiceTitan connector
+  SERVICETITAN
+  # Residential connector
+  RESIDENTIAL
+  # Construction connector
+  CONSTRUCTION
+}
+
+type Connector {
+  # connector id
+  id: ID
+  # connector name
+  name: String
+  # connector description
+  description: String
+  # connector configuration flag
+  configured: Boolean
+  # connector type
+  type: ConnectorType
+  # connector logo
+  logo: String
+}
+
+type ConnectorsResponse {
+  # The list of connectors
+  items: [Connector]
+  # The number of connectors per page
+  limit: Int!
+  # The number of connectors to skip
+  offset: Int!
+  # The total number of connectors
+  totalCount: Int!
+}
+
+type Query {
+  connectors(
+    # The number of connectors per page
+    limit: Int = 20
+    # The number of connectors to skip
+    offset: Int = 0
+  ): ConnectorsResponse
+}

@@ -1,0 +1,5 @@
+interface PagedResponse {
+  page: Int!
+  perPage: Int!
+  totalCount: Int!
+}

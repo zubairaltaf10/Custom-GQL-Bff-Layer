@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+
+    "strict": true,
+    "esModuleInterop": true,
+
+    "outDir": "./build",
+    "inlineSourceMap": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src", "esnext.asynciterable"]
+}

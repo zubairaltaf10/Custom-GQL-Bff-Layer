@@ -1,0 +1,7 @@
+build
+coverage
+node_modules
+.env.*.local
+.npmrc
+src/types/schema.ts
+.idea

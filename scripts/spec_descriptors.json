@@ -1,0 +1,10 @@
+{
+  "specs": [
+    {
+      "service": "connector-service",
+      "serviceName": "ConnectorService",
+      "generatorName": "typescript-axios",
+      "auth": false
+    }
+  ]
+}
